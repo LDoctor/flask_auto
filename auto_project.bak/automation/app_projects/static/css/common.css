@@ -1,0 +1,566 @@
+html {
+	font-size: 14px;
+}
+
+body {
+	min-width: 1500px;
+	height: 100%;
+	overflow: auto;
+	margin: 0;
+}
+
+
+/*滚动条样式*/
+
+*::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 8px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, .5);
+}
+
+*::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+	border-radius: 5px;
+	/*background: #797979;*/
+}
+
+
+/*面包屑*/
+
+.el-breadcrumb {
+	border-bottom: 2px solid #E1E1E1;
+	font-size: 14px;
+	padding: 10px 5px;
+}
+
+.cloud-text-right {
+	text-align: right;
+}
+
+
+/*表格*/
+
+.cloud-table {
+	color: #494949;
+}
+.table-area{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border-radius: 10px;
+}
+.cloud-detail table td {
+	word-break: break-all
+}
+
+.cloud-table td,
+.cloud-table th.is-leaf {
+	border-bottom: 1px solid #CED7E6;
+}
+
+.cloud-table td {
+	padding: 2px 0;
+}
+
+.cloud-table th {
+	padding: 5px 0;
+	background: #F1F2F4;
+}
+
+
+/*.cloud-table .el-checkbox__input{*/
+
+
+/*margin-top: 10px;*/
+
+
+/*}*/
+
+.is-leaf {
+	height: 35px;
+}
+
+.el-table__row span.status {
+	padding: 5px;
+	color: #fff;
+	line-height: 1;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.el-table td {
+	border-color: #e0e7f1;
+}
+
+.el-table__row {
+	line-height: 20px;
+}
+
+.el-table th {
+	background: #edf0f6;
+}
+
+.el-table button {
+	color: #60abfc;
+}
+
+.el-table a {
+	color: #60abfc;
+}
+
+table th {
+	background: #edf0f6;
+}
+
+
+/*分页*/
+
+.el-pagination {
+	font-weight: normal;
+}
+
+.el-pagination .btn-prev,
+.el-pagination .btn-next {
+	border: 1px solid #ddd;
+}
+
+.el-pagination .el-pager {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.el-pagination .btn-next {
+	border-left: none;
+}
+
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+	margin: 0;
+	background: #fff;
+	padding: 0 15px;
+}
+
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev {
+	height: 32px;
+	line-height: 32px;
+}
+
+.el-pagination.is-background .el-pager li {
+	height: 30px;
+	line-height: 30px;
+	border-right: 1px solid #ddd;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+	border: 1px solid #409EFF;
+}
+
+.el-input__inner {
+	vertical-align: baseline;
+}
+
+
+/*按钮*/
+
+.el-form .el-button {
+	padding: 8px auto;
+	border-radius: 3px;
+}
+
+
+/*模态框*/
+
+.el-dialog {
+	border-radius: 5px;
+}
+
+.el-dialog__header {
+	border-bottom: 1px solid #CED7E6;
+}
+
+.el-dialog__header .el-dialog__title {
+	color: #A6A9BC;
+}
+
+.el-dialog__footer .el-button {
+	border-radius: 4px;
+	width: 120px;
+}
+
+.el-dialog__footer {
+	border-top: 1px solid #CED7E6;
+}
+
+
+/*包含路由功能的primary按钮样式*/
+
+.cloud-router-btn .el-button--primary {
+	margin-right: 10px;
+}
+
+
+/*button*/
+
+button:focus {
+	outline: none;
+}
+
+.mainDiv .el-row {
+	margin: 15px 0;
+}
+
+.mainDiv .el-breadcrumb .el-row {
+	margin: 0;
+}
+
+.cloud-table .el-table__row {
+	height: 45px!important;
+}
+
+.cloud-btn-row .el-select {
+	margin-left: 10px;
+}
+
+
+/*表单label字体颜色*/
+
+.el-form-item__label {
+	color: #8D9BB5;
+}
+
+
+/*表单输入框去掉圆角*/
+
+.el-form-item .el-input input,
+.el-form-item .el-textarea textarea {
+	border-radius: 3px;
+}
+
+
+/*路由功能列表操作按钮间距*/
+
+.cloud-router-btn .el-button--text {
+	margin-right: 10px;
+}
+
+
+/*详情*/
+
+.cloud-detail .el-row {
+	border: 1px solid #ddd;
+	border-bottom: none;
+	font-size: 14px;
+}
+
+.cloud-detail .el-row:last-child {
+	border-bottom: 1px solid #ddd;
+}
+
+.cloud-detail .el-col {
+	border-right: 1px solid #ddd;
+	padding: 8px 0 8px 15px;
+}
+
+.cloud-detail .el-col:last-child {
+	border-right: none;
+}
+
+.cloud-detail .cloud-label {
+	text-align: right;
+	color: #A6A9BC;
+	background: #F2F3F8;
+	padding-right: 15px;
+}
+
+
+/*详情-模态框*/
+
+.cloud-detail-modal {
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+.cloud-detail-modal .el-row {
+	margin: 0;
+}
+
+.cloud-success {
+	background: #1abc9c;
+}
+
+.cloud-warning {
+	background: #f39c12;
+}
+
+.cloud-error {
+	background: #e74c3c;
+}
+
+.bg-blue {
+    background-color: #51a3ff;
+}
+/*关机*/
+
+.cloud-info {
+	background: #666666;
+}
+
+
+/*挂起*/
+
+.cloud-fault {
+	background: #4a6583;
+}
+
+
+/*其它*/
+
+.cloud-default {
+	background: #f39c12;
+	/*background: #51a3ff;*/
+}
+
+.cloud-color-green {
+	color: #1abc9c;
+}
+
+.cloud-color-orange {
+	color: #f39c12;
+}
+
+.cloud-color-red {
+	color: #e74c3c;
+}
+
+
+/*关机*/
+
+.cloud-color-gray {
+	color: #666666;
+}
+
+
+/*挂起*/
+
+.cloud-color-blue {
+	color: #51a3ff;
+}
+
+
+/*详情-表格*/
+
+.cloud-detail table td {
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+.cloud-detail table td.cloud-label {
+	text-align: right;
+}
+
+.cloud-detail table {
+	width: 100%;
+}
+
+.cloud-danger-btn.is-plain {
+	background: #fff;
+	color: #EE807F;
+	border-radius: 3px;
+}
+
+.mainDiv .el-row.pana-ip-input {
+	margin: 0;
+}
+
+.el-select-dropdown__wrap {
+	max-height: 520px;
+}
+
+
+/*模态框(提示框)*/
+
+.cloud-tipDialog .el-dialog__body {
+	text-align: center;
+	color: #A6A9BC;
+	font-size: 14px;
+}
+
+
+/*去掉type=number输入框的上下三角箭头*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+
+/*超出部分显示隐藏*/
+
+.ellipsis {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.cloud-back:hover {
+	color: #409EFF;
+	cursor: pointer;
+}
+
+.el-button--default.is-disabled,
+.el-button--default.is-disabled:focus,
+.el-button--default.is-disabled:hover {
+	background-color: #f5f7fa
+}
+
+
+/*模态框里的提示*/
+
+.cloud-modal-info {
+	width: 98%;
+	margin: -10px auto 20px;
+}
+
+
+/*模态框最大高度*/
+
+.el-dialog__body {
+	max-height: 700px;
+	overflow: auto;
+}
+
+
+/* 模态框最小宽度 */
+
+.el-dialog {
+	min-width: 650px;
+}
+
+
+/*body-dialog类可对使用了modal-append-to-body=false的模态框使用，限制头部和尾部高度*/
+
+.body-dialog .el-dialog__header,
+.el-dialog__footer {
+	line-height: normal!important;
+}
+
+.pagination-slot {
+	margin: 5px 15px;
+}
+
+
+/* chrome placeholder*/
+
+.cloud-btn-row .el-select .el-input__inner::-webkit-input-placeholder {
+	color: #606266;
+}
+
+.cloud-btn-row .el-select .is-disabled .el-input__inner::-webkit-input-placeholder {
+	color: #c0c4cc;
+}
+
+
+/* Firefox旧版本placeholder*/
+
+.cloud-btn-row .el-select .el-input__inner:-moz-placeholder {
+	color: #606266;
+}
+
+.cloud-btn-row .el-select .is-disabled .el-input__inner:-moz-placeholder {
+	color: #c0c4cc;
+}
+
+
+/* Firefox新版本*/
+
+.cloud-btn-row .el-select .el-input__inner::-moz-placeholder {
+	color: #606266;
+	opacity: 1;
+}
+
+.cloud-btn-row .el-select .is-disabled .el-input__inner::-moz-placeholder {
+	color: #c0c4cc;
+}
+
+.cloud-btn-row .el-select .el-input__inner:-ms-input-placeholder {
+	color: #606266;
+}
+
+.cloud-btn-row .el-select .is-disabled .el-input__inner:-ms-input-placeholder {
+	color: #c0c4cc;
+}
+
+.el-loading-mask {
+	z-index: 999 !important;
+}
+
+.el-dialog__body {
+	padding: 20px;
+}
+
+.el-dialog__body .el-alert {
+	margin-bottom: 20px;
+}
+
+.el-alert--bg-blue {
+	background: #EDF7FF;
+	color: #858EAB;
+}
+
+.el-alert--bg-orange {
+    background-color: #fff4e0;
+    color: #e67e22;
+    border-color: #f3ca86;
+}
+
+.cloud-btn-green{
+    color: #1abc9c!important;
+    background: #EDFBF8;
+    border: 1px solid #1abc9c;
+}
+
+.cloud-btn-purple{
+    color: #5d78ff!important;
+    background: #E9F5FE;
+    border: 1px solid #5d78ff;
+}
+
+.cloud-btn-gray{
+    color: #A4AABD!important;
+    background: #F7FBFC;
+    border: 1px solid #A4AABD;
+}
+.cloud-btn-blue{
+    color: #4B9BFF!important;
+    background: #E9F5FE;
+    border: 1px solid #4B9BFF;
+}
+.search-row {
+    margin: 0!important;
+}
+
+.el-main{
+    overflow-x: visible!important;
+}
+.auto-main {
+	width: 100%;
+	padding: 0;
+	background: #fff;
+	margin-top: 100px;
+}

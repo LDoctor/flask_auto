@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="root@192.168.9.11:22 key">
+    <serverData>
+      <paths name="root@192.168.9.11:22 key">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="/mnt/tmp/auto_project" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>

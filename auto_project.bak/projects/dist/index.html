@@ -1,0 +1,124 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>PanaCube</title><script src=/static/js/jquery.min.js type=text/javascript charset=utf-8></script><style type=text/css>.ie-tips {
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin-left: -600px;
+				margin-top: -385px;
+				color: #fff;
+				font-size: 18px;
+				width: 1200px;
+				height: 770px;
+				z-index: 1000;
+				background-color: rgba(0, 0, 0, 0.7);
+				border-radius: 20px;
+				padding: 0 30px;
+			}
+			
+			.ie-tips .title {
+				line-height: 100px;
+				font-size: 30px;
+				text-align: center;
+				position: relative;
+				top: 128px;
+			}
+			
+			.ie-tips .img-list {
+				padding-top: 240px;
+			}
+			
+			.ie-tips .img-list li {
+				width: 33.333333%;
+				float: left;
+				list-style-type: none;
+				text-align: center;
+				margin-bottom: 60px;
+			}
+			
+			.ie-tips .img-list li a {
+				width: 122px;
+				height: 122px;
+				display: inline-block;
+			}
+			
+			.ie-tips .img-list li figcaption {
+				text-transform: capitalize;
+			}
+			
+			.ie-tips .img-list li:nth-child(1) a {
+				background: url(/static/image/browseicon.png) no-repeat 1px 0;
+				background-size: auto 122px;
+			}
+			
+			.ie-tips .img-list li p {
+				color: #fff;
+				font-size: 18px;
+			}
+			
+			.ie-tips .img-list li:nth-child(2) a {
+				background: url(/static/image/browseicon.png) no-repeat -120px 0;
+				background-size: auto 122px;
+			}
+			
+			.ie-tips .img-list li:nth-child(3) a {
+				background: url(/static/image/browseicon.png) no-repeat -482px 0;
+				background-size: auto 122px;
+			}
+			
+			.hide {
+				display: none !important;
+			}</style><link rel="shortcut icon" href=/favicon.ico><link href=/static/css/app.94ce3b3f3a76e7d9b9c37738044d4d19.css rel=stylesheet></head><body><div id=ie-tips class="ie-tips hide"><p class=title>您的浏览器暂不支持筋斗云平台，请使用以下浏览器</p><ul class=img-list><li><figure><a target=_blank href=https://www.google.com/chrome></a><figcaption>Google Chrome</figcaption><p><b>v43.0</b> 以上版本</p></figure></li><li><figure><a target=_blank href=https://www.firefox.com/ ></a><figcaption>火狐浏览器</figcaption><p><b>v30.0</b> 以上版本</p></figure></li><li><figure><a target=_blank href=https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads></a><figcaption>internet explorer</figcaption><p><b>v10.0</b> 及以上版本</p></figure></li></ul></div><div id=app></div><script type=text/javascript>//			获取浏览器信息
+			function getBrowserInfo() {
+				var agent = navigator.userAgent.toLowerCase();
+				var regStr_ie = /msie [\d.]+;/gi;
+				var regStr_ff = /firefox\/[\d.]+/gi
+				var regStr_chrome = /chrome\/[\d.]+/gi;
+				var regStr_saf = /safari\/[\d.]+/gi;
+				var isIE = agent.indexOf("compatible") > -1 && agent.indexOf("msie" > -1); //判断是否IE<11浏览器  
+				var isEdge = agent.indexOf("edge") > -1 && !isIE; //判断是否IE的Edge浏览器  
+				var isIE11 = agent.indexOf('trident') > -1 && agent.indexOf("rv:11.0") > -1;
+				if(isIE) {
+					var reIE = new RegExp("msie (\\d+\\.\\d+);");
+					reIE.test(agent);
+					var fIEVersion = parseFloat(RegExp["$1"]);
+					if(fIEVersion == 7) {
+						return "IE/7";
+					} else if(fIEVersion == 8) {
+						return "IE/8";
+					} else if(fIEVersion == 9) {
+						return "IE/9";
+					} else if(fIEVersion == 10) {
+						return "IE/10";
+					}
+				} //isIE end 
+				if(isIE11) {
+					return "IE/11";
+				}
+				//				edge
+				if(isEdge) {
+					return 'edge'
+				}
+				//firefox
+				if(agent.indexOf("firefox") > 0) {
+					return agent.match(regStr_ff);
+				}
+				//Safari
+				if(agent.indexOf("safari") > 0 && agent.indexOf("chrome") < 0) {
+					return agent.match(regStr_saf);
+				}
+				//Chrome
+				if(agent.indexOf("chrome") > 0) {
+					return agent.match(regStr_chrome);
+				}
+			}
+			var browser = getBrowserInfo();
+			var b_name = (browser + "").replace(/[0-9./]/ig, "");
+			var b_version = parseInt((browser + "").replace(/[^0-9.]/ig, ""));
+			if(b_name === 'chrome' && b_version <= 43) {
+				$("#ie-tips").removeClass('hide')
+			} else if(b_name === 'edge') {
+				$("#ie-tips").removeClass('hide')
+			} else if(b_name === 'firefox' && b_version <= 30) {
+				$("#ie-tips").removeClass('hide')
+			} else if(b_name === 'IE' && b_version < 10) {
+				$("#ie-tips").removeClass('hide')
+			}</script><script type=text/javascript src=/static/js/manifest.75d4a00c79ff812695df.js></script><script type=text/javascript src=/static/js/vendor.4aee5c0f7521ba254ecb.js></script><script type=text/javascript src=/static/js/app.447f440264ce705bc22f.js></script></body></html>

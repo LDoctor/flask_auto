@@ -1,0 +1,1 @@
+webpackJsonp([120],{"/Brz":function(e,r,n){"use strict";Object.defineProperty(r,"__esModule",{value:!0});var t={render:function(){var e=this.$createElement;return(this._self._c||e)("router-view")},staticRenderFns:[]},u=n("C7Lr")({name:"pana-safe-group"},t,!1,null,null,null);r.default=u.exports}});
